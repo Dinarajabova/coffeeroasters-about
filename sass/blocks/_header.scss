@@ -1,0 +1,28 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 44px 0;
+    align-items: center;
+}
+.header__list {
+    @include reset-list;
+    
+}
+
+
+
+
+.header__img-logo {
+    display: block;
+}
+
+
+.header__list-item {
+    margin-right: 33px;
+}
+.header__list-item:last-child {
+    margin-right: 0;
+}
+.nav-link {
+    @include reset-nav-link;  
+}

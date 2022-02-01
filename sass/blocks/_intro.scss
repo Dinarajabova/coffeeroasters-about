@@ -1,0 +1,23 @@
+
+.intro__container {
+    background-image: url(../img/Bitmap.jpg);
+    padding: 116px 0 116px; 
+    border-radius: 12px; 
+}
+.intro__div {
+    margin-left: 86px;
+}
+.intro__title {
+    width: 493px;
+    font-size: 72px;
+    @include fraunces;
+    line-height: 72px;
+    
+    color: white;
+}
+.intro__paragraph {
+    width: 445px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 32px 0 56px;
+      
+}

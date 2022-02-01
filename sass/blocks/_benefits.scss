@@ -1,0 +1,63 @@
+.benefits__container {
+    
+    text-align: center;
+    position: relative;
+
+    &::before {
+        @include section-bg;
+        height: 577px;
+    }
+}
+.benefits__title{
+    padding-top: 100px;
+    @include fraunces;
+    font-weight: 900;
+    font-size: 40px;
+    color: white;
+}   
+.benefits__description {
+    width: 540px;
+    color: white;
+    display: inline-block;
+    margin: 32px 0 86px;
+    
+    
+}
+.benefits__list {
+   @include reset-list;
+   justify-content: center;
+   flex-wrap: wrap;
+}   
+    
+
+.benefits__item {
+    width: 350px;
+    background-color: rgba(14, 135, 132, 1);
+    margin-right: 30px;
+    padding: 200px 48px 48px;
+    border-radius: 8px;
+    color: white;
+}
+.benefits__item:last-child {
+    margin-right: 0;
+}
+.benefits__item--coffee-bean {
+    background-image: url(../../img/coffee-bean.svg);
+    @include bg-img;
+}
+.benefits__item-title {
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    @include fraunces;
+}
+
+    
+
+.benefits__item--gift {
+    background-image: url(../../img/gift.svg);
+    @include bg-img;
+}
+.benefits__item--shipping {
+    background-image: url(../../img/delivery.svg);
+    @include bg-img;
+}

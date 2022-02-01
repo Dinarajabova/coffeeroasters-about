@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-Regular.woff2") format("woff2"), url("../fonts/Barlow-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-Bold.woff2") format("woff2"), url("../fonts/Barlow-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("../Fraunces-Black.woff2") format("woff2"), url("../Fraunces-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+.container {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 44px 0;
+  align-items: center;
+}
+
+.header__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.header__img-logo {
+  display: block;
+}
+
+.header__list-item {
+  margin-right: 33px;
+}
+
+.header__list-item:last-child {
+  margin-right: 0;
+}
+
+.nav-link {
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #83888F;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #83888F;
+  text-transform: uppercase;
+}
+
+.intro__container {
+  background-image: url(../img/Bitmap.jpg);
+  padding: 116px 0 116px;
+  border-radius: 12px;
+}
+
+.intro__div {
+  margin-left: 86px;
+}
+
+.intro__title {
+  width: 493px;
+  font-size: 72px;
+  font-family: "Fraunces";
+  line-height: 72px;
+  color: white;
+}
+
+.intro__paragraph {
+  width: 445px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 32px 0 56px;
+}
+
+.main-link {
+  text-decoration: none;
+  color: white;
+  padding: 15px 31px 16px;
+  font-family: "Fraunces";
+  font-size: 18px;
+  border-radius: 6px;
+  background-color: #0E8784;
+  display: inline-block;
+}
+
+.main-link:hover {
+  background-color: #66d2cf;
+}
+
+.collections__container {
+  width: 1111px;
+  padding: 200px 0;
+}
+
+.collections__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.collections__item {
+  width: 255px;
+  text-align: center;
+}
+
+.collections__title {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 160px;
+  line-height: 1;
+  position: absolute;
+  z-index: -1;
+  transform: translateY(-60%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-color: #83888f;
+  background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
+}
+
+.collection__item-title {
+  font-size: 24px;
+  font-family: "Fraunces";
+  font-weight: 900;
+  text-transform: capitalize;
+  color: #333D4B;
+  margin: 70px 0 24px;
+}
+
+.collections__item-description {
+  color: #333D4B;
+}
+
+.benefits__container {
+  text-align: center;
+  position: relative;
+}
+.benefits__container::before {
+  background-color: #2c343e;
+  border-radius: 10px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  content: "";
+  height: 577px;
+}
+
+.benefits__title {
+  padding-top: 100px;
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 40px;
+  color: white;
+}
+
+.benefits__description {
+  width: 540px;
+  color: white;
+  display: inline-block;
+  margin: 32px 0 86px;
+}
+
+.benefits__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.benefits__item {
+  width: 350px;
+  background-color: #0e8784;
+  margin-right: 30px;
+  padding: 200px 48px 48px;
+  border-radius: 8px;
+  color: white;
+}
+
+.benefits__item:last-child {
+  margin-right: 0;
+}
+
+.benefits__item--coffee-bean {
+  background-image: url(../../img/coffee-bean.svg);
+  background-repeat: no-repeat;
+  background-position: center 72px;
+}
+
+.benefits__item-title {
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  font-family: "Fraunces";
+}
+
+.benefits__item--gift {
+  background-image: url(../../img/gift.svg);
+  background-repeat: no-repeat;
+  background-position: center 72px;
+}
+
+.benefits__item--shipping {
+  background-image: url(../../img/delivery.svg);
+  background-repeat: no-repeat;
+  background-position: center 72px;
+}
+
+.process__container {
+  width: 1111px;
+  padding: 200px 0;
+}
+
+.process__title {
+  font-size: 24px;
+  color: #83888f;
+  font-family: "Fraunces";
+  margin-bottom: 80px;
+}
+
+.process__btn {
+  border: 2px solid #0e8784;
+  background-color: white;
+  padding: 15px 15px;
+  border-radius: 50%;
+  margin-right: 349px;
+}
+
+.process__div {
+  display: flex;
+}
+
+.process__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.process-item {
+  margin-right: 95px;
+}
+
+.process__item-span {
+  font-size: 72px;
+  color: #fdd6ba;
+  display: block;
+  margin-top: 67px;
+}
+
+.process-item__title {
+  font-size: 32px;
+  font-weight: 900;
+  width: 255px;
+  font-family: "Fraunces";
+  margin: 38px 0 42px;
+  vertical-align: middle;
+}
+
+.process-item__description {
+  width: 285px;
+  margin-bottom: 64px;
+}
+
+.footer {
+  background-color: #2c343e;
+}
+
+.footer__container {
+  width: 1111px;
+  display: flex;
+  padding: 47px 0 48px;
+}
+
+.footer__logo-img {
+  display: block;
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin-left: 103px;
+}
+
+.footer__list-item {
+  margin-right: 33px;
+}
+
+.footer__list-item:last-child {
+  margin-right: 0;
+}
+
+.nav-link {
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #83888F;
+  text-transform: uppercase;
+}
+
+.footer__socials-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.footer__socials-item {
+  margin-right: 24px;
+}
+
+.footer__socials-item:last-child {
+  margin-right: 0;
+}/*# sourceMappingURL=main.css.map */

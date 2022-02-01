@@ -1,0 +1,13 @@
+.main-link {
+    text-decoration: none;
+    color: white;
+    padding: 15px 31px 16px;
+    @include fraunces;
+    font-size: 18px;
+    border-radius: 6px;
+    background-color: #0E8784;
+    display: inline-block;
+}
+.main-link:hover {
+    background-color: rgba(102, 210, 207, 1);
+}

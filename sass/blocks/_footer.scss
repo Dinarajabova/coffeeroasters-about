@@ -1,0 +1,37 @@
+.footer {
+    background-color: rgba(44, 52, 62, 1);
+}
+.footer__container {  
+    width: 1111px;
+    display: flex;
+    padding: 47px 0 48px;
+}
+.footer__logo-img {
+    display: block;
+}
+.footer__nav {
+}
+.footer__list {
+    @include reset-list;
+    
+    margin-left: 103px;
+}
+.footer__list-item {
+    margin-right: 33px
+}
+.footer__list-item:last-child {
+    margin-right: 0;
+}
+.nav-link {
+    @include reset-nav-link;
+}
+.footer__socials-list {
+    @include reset-list;
+    margin-left: auto;
+}
+.footer__socials-item {
+    margin-right: 24px;
+}
+.footer__socials-item:last-child {
+    margin-right: 0;
+}
