@@ -1,0 +1,26 @@
+.headquarters__container {
+    width: 1110px;
+    padding: 168px 0;    
+}
+.haedquarters__title {
+    @include grey-title;
+}
+.headquarters__list {
+    @include reset-list;
+    
+    
+}
+.headquarters-item {
+    width: 285px;
+    margin-right: 95px;
+}
+.headquarters-item__title {
+    @include item-title;
+    width: 272px;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+    @include accent-color;
+}
+.headquarters-item-description {
+    @include accent-color;
+}

@@ -1,0 +1,23 @@
+.commitment__container {
+    width: 1110px;
+    margin-top: 168px;
+    padding: 90px 0;
+    background-image: url(../../img/coffeemaker.jpg);
+    background-repeat: no-repeat;
+    
+}
+  
+
+.commitment__title {
+    @include reset-title;
+    margin-bottom: 32px;
+    @include accent-color;
+}
+.commitment__description {
+    width: 540px;
+    @include accent-color;
+}
+.commitment__div {
+    width: 540px;
+   margin-left: auto; 
+}

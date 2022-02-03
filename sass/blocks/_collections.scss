@@ -33,10 +33,10 @@
     @include fraunces;
     font-weight: 900;
     text-transform: capitalize;
-    color: #333D4B;
+    @include accent-color;
     margin: 70px 0 24px;
 }
 .collections__item-description {
-    color: #333D4B;
+    @include accent-color;
     
 }

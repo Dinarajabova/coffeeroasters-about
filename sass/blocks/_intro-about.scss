@@ -1,0 +1,17 @@
+.intro__container-about {
+    background-image: url(../../img/about-intro-bg.jpg);
+    height: 450px;
+    padding: 137px 0;
+}
+
+.intro__title-about {
+    @include reset-title;
+    color: white;
+   text-transform: capitalize;
+    margin: 0 0 24px;  
+}    
+    
+
+.intro__paragraph-about {
+    @include intro-description;
+}

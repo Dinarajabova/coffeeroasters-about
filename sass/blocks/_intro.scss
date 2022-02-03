@@ -12,12 +12,10 @@
     font-size: 72px;
     @include fraunces;
     line-height: 72px;
-    
-    color: white;
+    color: white;   
 }
 .intro__paragraph {
-    width: 445px;
-    color: rgba(255, 255, 255, 0.8);
+    @include intro-description;
     margin: 32px 0 56px;
       
 }

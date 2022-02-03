@@ -4,10 +4,7 @@
     padding: 200px 0;
 }
 .process__title {
-    font-size: 24px;
-    color: rgba(131, 136, 143, 1);
-    @include fraunces;
-    margin-bottom: 80px;
+   @include grey-title;
 }
 .process__btn {
     border: 2px solid #0e8784;
@@ -16,16 +13,29 @@
     border-radius: 50%;
     margin-right: 349px;
    
-    
 }   
  
 .process__div {
-    display: flex
+    display: flex;
+   position: relative;
+    
+    
 }
-
+.process__div::before {
+    border: 1px solid rgba(253, 214, 186, 1);
+    background-color:rgba(253, 214, 186, 1);
+    width: 760px;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 10px;
+    
+}
 .process__list {
     @include reset-list;
-    
+   
 }
 .process-item {
     margin-right: 95px;
@@ -35,16 +45,15 @@
     color: rgba(253, 214, 186, 1);
     display: block;
     margin-top: 67px;
-    
+    @include fraunces;
 }
 .process-item__title {
-    font-size: 32px;
-    font-weight: 900;
-    width: 255px;
-    @include fraunces;
-    margin: 38px 0 42px;vertical-align: middle;
+    @include item-title;
+    margin: 38px 0 42px;
+    @include accent-color;
 }
 .process-item__description {
+    @include accent-color;
     width: 285px;
     margin-bottom: 64px;
 }

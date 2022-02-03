@@ -41,7 +41,7 @@ body {
 }
 @font-face {
   font-family: "Fraunces";
-  src: url("../Fraunces-Black.woff2") format("woff2"), url("../Fraunces-Black.woff") format("woff");
+  src: url("../fonts/Fraunces-Black.woff2") format("woff2"), url("../fonts/Fraunces-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -170,12 +170,12 @@ body {
   font-family: "Fraunces";
   font-weight: 900;
   text-transform: capitalize;
-  color: #333D4B;
+  color: #333d4b;
   margin: 70px 0 24px;
 }
 
 .collections__item-description {
-  color: #333D4B;
+  color: #333d4b;
 }
 
 .benefits__container {
@@ -198,7 +198,6 @@ body {
 .benefits__title {
   padding-top: 100px;
   font-family: "Fraunces";
-  font-weight: 900;
   font-size: 40px;
   color: white;
 }
@@ -240,7 +239,7 @@ body {
 
 .benefits__item-title {
   margin-bottom: 24px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-family: "Fraunces";
 }
 
@@ -278,6 +277,19 @@ body {
 
 .process__div {
   display: flex;
+  position: relative;
+}
+
+.process__div::before {
+  border: 1px solid #fdd6ba;
+  background-color: #fdd6ba;
+  width: 760px;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 10px;
 }
 
 .process__list {
@@ -296,18 +308,20 @@ body {
   color: #fdd6ba;
   display: block;
   margin-top: 67px;
+  font-family: "Fraunces";
 }
 
 .process-item__title {
   font-size: 32px;
-  font-weight: 900;
   width: 255px;
   font-family: "Fraunces";
+  line-height: 36px;
   margin: 38px 0 42px;
-  vertical-align: middle;
+  color: #333d4b;
 }
 
 .process-item__description {
+  color: #333d4b;
   width: 285px;
   margin-bottom: 64px;
 }
@@ -364,4 +378,137 @@ body {
 
 .footer__socials-item:last-child {
   margin-right: 0;
+}
+
+.intro__container-about {
+  background-image: url(../../img/about-intro-bg.jpg);
+  height: 450px;
+  padding: 137px 0;
+}
+
+.intro__title-about {
+  font-family: "Fraunces";
+  font-size: 40px;
+  line-height: 48px;
+  color: white;
+  text-transform: capitalize;
+  margin: 0 0 24px;
+}
+
+.intro__paragraph-about {
+  width: 445px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.commitment__container {
+  width: 1110px;
+  margin-top: 168px;
+  padding: 90px 0;
+  background-image: url(../../img/coffeemaker.jpg);
+  background-repeat: no-repeat;
+}
+
+.commitment__title {
+  font-family: "Fraunces";
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 32px;
+  color: #333d4b;
+}
+
+.commitment__description {
+  width: 540px;
+  color: #333d4b;
+}
+
+.commitment__div {
+  width: 540px;
+  margin-left: auto;
+}
+
+.quality__container {
+  margin-top: 244px;
+  margin-bottom: 168px;
+  position: relative;
+}
+.quality__container::before {
+  background-color: #2c343e;
+  border-radius: 10px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  content: "";
+  height: 473px;
+}
+
+.quality__div {
+  margin-left: 85px;
+}
+
+.quality__title {
+  font-family: "Fraunces";
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 32px;
+  color: white;
+  padding-top: 88px;
+}
+
+.quality__desctiption {
+  width: 540px;
+  color: white;
+}
+
+.quality__img {
+  background-image: url(../../img/quality-bg.jpg);
+  background-repeat: no-repeat;
+  width: 445px;
+  height: 474px;
+  position: absolute;
+  content: "";
+  top: -89px;
+  right: 86px;
+  border-radius: 10px;
+}
+
+.headquarters__container {
+  width: 1110px;
+  padding: 168px 0;
+}
+
+.haedquarters__title {
+  font-size: 24px;
+  color: #83888f;
+  font-family: "Fraunces";
+  margin-bottom: 80px;
+}
+
+.headquarters__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.headquarters-item {
+  width: 285px;
+  margin-right: 95px;
+}
+
+.headquarters-item__title {
+  font-size: 32px;
+  width: 255px;
+  font-family: "Fraunces";
+  line-height: 36px;
+  width: 272px;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+  color: #333d4b;
+}
+
+.headquarters-item-description {
+  color: #333d4b;
 }/*# sourceMappingURL=main.css.map */

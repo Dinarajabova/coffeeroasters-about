@@ -35,3 +35,32 @@
 @mixin fraunces {
   font-family: "Fraunces";
 }
+
+@mixin intro-description {
+  width: 445px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@mixin reset-title {
+  font-family: "Fraunces";
+  font-size: 40px;
+  line-height: 48px;
+}
+
+@mixin grey-title {
+  font-size: 24px;
+  color: rgba(131, 136, 143, 1);
+  @include fraunces;
+  margin-bottom: 80px;
+}
+
+@mixin item-title {
+   font-size: 32px;
+    width: 255px;
+    @include fraunces;
+    line-height: 36px;
+}
+
+@mixin accent-color {
+  color: rgba(51, 61, 75, 1);
+}

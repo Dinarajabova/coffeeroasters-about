@@ -1,0 +1,41 @@
+
+.quality__container {
+    
+    margin-top: 244px;
+    margin-bottom: 168px;
+    position: relative;
+    
+    
+    &::before {
+        @include section-bg;
+        height: 473px;
+    }
+    
+}
+.quality__div {
+    margin-left: 85px;
+    
+}
+.quality__title {
+    @include reset-title;
+    margin-bottom: 32px;
+    color: white;
+    padding-top: 88px;
+
+}
+.quality__desctiption {
+    width: 540px;
+    color: white;
+}
+.quality__img {
+     background-image: url(../../img/quality-bg.jpg);
+        background-repeat: no-repeat;
+        width: 445px;
+        height: 474px;
+        position: absolute;
+        content: '';
+        top: -89px;
+        right: 86px;
+        border-radius: 10px;
+}
+

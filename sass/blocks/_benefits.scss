@@ -10,8 +10,7 @@
 }
 .benefits__title{
     padding-top: 100px;
-    @include fraunces;
-    font-weight: 900;
+    @include fraunces;    
     font-size: 40px;
     color: white;
 }   
@@ -47,7 +46,7 @@
 }
 .benefits__item-title {
     margin-bottom: 24px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     @include fraunces;
 }
 
